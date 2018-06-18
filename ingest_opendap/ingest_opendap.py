@@ -2,7 +2,7 @@ import re
 from pydap.client import open_url
 from shapely.geometry import Point, Polygon, shape, box
 
-def discover(sources, geojson_polygon):
+def ingest(sources, geojson_polygon):
     polygon = shape(geojson_polygon)
     results = []
     for source_key in sources:

@@ -1,8 +1,8 @@
 import json
 
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'discover_opendap'))
-from discover_opendap import discover
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'ingest_opendap'))
+from ingest_opendap import ingest
 
 sources_filepath = os.path.join(os.path.dirname(__file__), '..', 'tests', 'input.json')
 
@@ -45,4 +45,4 @@ geojson_filepath = os.path.join(os.path.dirname(__file__), 'boundary.json')
 with open(geojson_filepath) as f:
     geojson = json.load(f)
 
-discover(sources, geojson['geometry'])
+ingest(sources, geojson['geometry'])
