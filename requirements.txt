@@ -1,0 +1,4 @@
+-e git+https://github.com/pydap/pydap.git#egg=Pydap
+requests==2.18.4
+Shapely==1.6.4.post1
+cumulus-message-adapter-python-1.0.3
